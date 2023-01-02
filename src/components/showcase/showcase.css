@@ -1,0 +1,42 @@
+.showcase-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.showcase-slider{
+    max-width: 280px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 9/16;
+}
+
+.close-button{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 400px){
+    .showcase-slider{
+        width: 160px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width: 680px){
+    .showcase-slider{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:680px) and (max-width: 850px){
+    .showcase-slider{
+        width: 240px;
+    }
+}

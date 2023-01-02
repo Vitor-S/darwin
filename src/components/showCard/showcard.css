@@ -1,0 +1,94 @@
+.skins-container{
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+
+    transition: 0.3s ease-out;
+}
+
+.skin-img{
+    aspect-ratio: 1/1;
+    width: 135px;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #11111a;
+
+    transition: 0.15s ease-out;
+}
+
+.skin-img:hover{
+    cursor: pointer;
+    background-color: #0b0b11;
+}
+
+.button {
+    display: none;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    box-sizing: border-box;
+    color: #FFF;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:focus {
+    color: #FFF;
+}
+
+.button:hover {
+    border-color: #2ae28c;
+    color: #2ae28c;
+}
+
+.button:active {
+    border-color: #2ae28c;
+    color: #2ae28c;
+}
+
+@media (min-width: 768px) {
+    .button {
+        min-width: 170px;
+    }
+}
+
+.card-container:hover .skins-container{
+    display: flex;
+}
+
+.card-container:hover .button{
+    display: block;
+}
+
+@media screen and (max-width: 400px){
+    .skin-img{
+        width: 70px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width: 680px){
+    .skin-img{
+        width: 85px;
+    }
+}
+
+@media screen and (min-width:680px) and (max-width: 850px){
+    .skin-img{
+        width: 100px;
+    }
+}

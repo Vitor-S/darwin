@@ -1,0 +1,87 @@
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    height: 15vh;
+    background-color: rgb(25, 25, 37);
+    color: #FFF;
+    padding: 40px;
+
+    transition: 0.3s ease-out;
+}
+
+.card-title{
+    font-size: 2rem;
+    position: relative;
+}
+
+.card-img{
+    position: absolute;
+    width: 15%;
+    left: 30px;
+    top: -30px;
+}
+
+.paragraph{
+    font-size: 1.2rem;
+    text-align: center;
+    display: none;
+    transition: 0.3s ease-out;
+}
+
+.card-container:hover{
+    height: 45vh;
+}
+
+.card-container:hover p{
+    display: block;
+}
+
+@media screen and (max-width: 400px){
+    .card-title{
+        font-size: 1.3rem;
+        position: relative;
+    }
+
+    .paragraph{
+        font-size: .8rem;
+        text-align: center;
+        display: none;
+        transition: 0.3s ease-out;
+    }
+    
+    .card-container:hover{
+        height: 55vh;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width: 680px){
+    .card-title{
+        font-size: 1.15rem;
+        position: relative;
+    }
+
+    .paragraph{
+        font-size: .9rem;
+        text-align: center;
+        display: none;
+        transition: 0.3s ease-out;
+    }
+    
+    .card-container:hover{
+        height: 58vh;
+    }
+}
+
+@media screen and (min-width:680px) and (max-width: 850px){
+    .paragraph{
+        font-size: 1rem;
+        text-align: center;
+        display: none;
+        transition: 0.3s ease-out;
+    }
+}
